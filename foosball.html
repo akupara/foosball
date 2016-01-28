@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <script src="node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="pingpong" class="container" style="margin-top: 100px">
+    <div class="row">
+        <div class="col-md-10"></div>
+        <div class="col-md-2">
+            <button v-on:click="start" class="btn btn-lg btn-success">开始</button>
+            <button v-on:click="end" class="btn btn-lg btn-danger">结束</button>
+        </div>
+    </div>
+    <div class="row" style="height: 20px">
+
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+    <div class="panel panel-info">
+        <div class="panel-heading">左队</div>
+        <div class="panel-body">
+            <div v-on:click="right_inc" class="avatar">
+                <img src="https://avatars3.githubusercontent.com/u/1715548"/>
+            </div>
+
+            <div class="avatar">
+                <img src="https://avatars0.githubusercontent.com/u/521058"/>
+            </div>
+
+            <h2>{{left}}</h2>
+            <button v-on:click="left_inc" class="btn btn-success">得分</button>
+        </div>
+    </div>
+            </div>
+
+        <div class="col-md-6">
+
+    <div class="panel panel-warning">
+        <div class="panel-heading">右队</div>
+        <div class="panel-body">
+            <div v-on:click="right_inc" class="avatar">
+                <img src="https://avatars1.githubusercontent.com/u/5569844"/>
+            </div>
+
+            <div class="avatar">
+                <img src="https://avatars2.githubusercontent.com/u/313230"/>
+            </div>
+
+            <h2>{{right}}</h2>
+            <button v-on:click="right_inc" class="btn btn-success">得分</button>
+        </div>
+    </div>
+            </div>
+    </div>
+</div>
+
+<script src="static/js/entry.js"></script>
+</body>
+</html>
