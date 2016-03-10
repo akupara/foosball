@@ -18,6 +18,17 @@
   "homepage": "https://github.com/akupara/foosball#readme",
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "vue": "^1.0.15"
+    "jquery": "^2.2.1",
+    "vue": "^1.0.15",
+    "webpack": "^1.12.14"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^0.15.10",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "style-loader": "^0.13.0",
+    "typescript": "^1.8.7",
+    "url-loader": "^0.5.7"
   }
 }
